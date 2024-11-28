@@ -1,9 +1,6 @@
 package atelier06;
 
-public class Chat extends implements Domesticable {
-	package atelier06;
-
-	public class Chat extends Felin implements Domesticable {
+public class Chat extends Felin implements Domesticable {
 
 		/**
 		 * le constructeur de Chat fait appel au constructeur de la sur-classe Felin
@@ -18,15 +15,17 @@ public class Chat extends implements Domesticable {
 		 * @param nom nom de l'animal
 		 */
 		public void domestiquer(String nom) {
+			domestique = true;
+			this nom = nom;
 		}
-
+		
 		/**
 		 * Rend le nom de l'animal
 		 * 
 		 * @return nom de l'animal
 		 */
 		public String nom() {
-			return null;
+			return nom;
 		}
 
 	}
